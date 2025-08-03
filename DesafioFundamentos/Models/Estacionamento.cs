@@ -14,7 +14,7 @@ namespace DesafioFundamentos.Models
 
         public void AdicionarVeiculo()
         {
-            //IMPLENTADO!!!
+            //IMPLEMENTADO!!!
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string placa = Console.ReadLine();
             veiculos.Add(placa);
@@ -25,7 +25,7 @@ namespace DesafioFundamentos.Models
             //IMPLEMENTADO!!
             Console.WriteLine("Digite a placa do veículo para remover:");
             string placa = Console.ReadLine();
-            
+
             // Verifica se o veículo existe
             if (veiculos.Any(x => x.ToUpper() == placa.ToUpper()))
             {
@@ -55,10 +55,6 @@ namespace DesafioFundamentos.Models
                 {
                     Console.WriteLine(carro);
                 }
-            }
-            else
-            {
-                Console.WriteLine("Não há veículos estacionados.");
             }
         }
     }
